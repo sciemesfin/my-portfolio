@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-20 md:pt-32">
+  <div class="pt-20 md:pt-32 h-full">
     <div
-      class="mx-auto md:max-w-7xl justify-center w-[100%] px-2 py-10 sm:px-6 lg:px-8"
+      class="mx-auto md:max-w-7xl h-full justify-center w-[100%] px-2 py-10 sm:px-6 lg:px-8"
     >
       <div class="md:flex">
         <section class="w-full md:w-1/2 md:p-10">

@@ -27,7 +27,7 @@ import udacity from "../assets/udacity.png";
 import ibm from "../assets/ibm.png";
 import google from "../assets/google.png";
 import php from "../assets/php.png";
-import cs1 from "../assets/cs1.jpeg";
+import cs1 from "../assets/award.jpeg";
 import cs2 from "../assets/cs2.jpeg";
 const items = [
   {

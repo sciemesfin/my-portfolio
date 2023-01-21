@@ -21,6 +21,7 @@
         <section class="w-full md:w-1/2">
             <img src="~/assets/degree.jpeg" alt="" class="w-full h-full">
         </section>
+        
       </div>
     </div>
   </div>

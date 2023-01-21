@@ -3,13 +3,14 @@
     <div
       class="mx-auto md:max-w-7xl py-10 justify-center w-[100%] px-5 sm:px-6 lg:px-8 pb-64"
     >
-      <div class="flex flex-wrap">
+    <h1 class="text-xl my-8 text-center md:text-7xl font-extrabold py-2">Certicates & Awards</h1>
+      <div class="md:flex md:flex-wrap">
         <div
           v-for="item in items"
           :key="item.school"
-          class="w-full p-10 md:w-1/2"
+          class="w-full p-2 md:p-10 md:w-1/2"
         >
-          <div class="h-full cursor-pointer">
+          <div  class="h-full cursor-pointer bg-white shadow-md border border-gray-200 rounded-lg">
             <img
               :src="item.image"
               alt=""

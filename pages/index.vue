@@ -49,7 +49,7 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="grid grid-cols-2 gap-4 mt-8 h-full">
           <img
             class="w-full rounded-lg"
             src="~/assets/i2.avif"
@@ -65,12 +65,12 @@
     </section>
 
     <section>
-      <div class="md:max-w-7xl justify-center w-[100%] py-4 px-4 mt-6 mx-auto">
+      <div class="md:max-w-7xl pt-32 md:pt-3 justify-center w-[100%] px-4  mx-auto">
         <div class="md:max-w-[80%] mx-auto">
-          <h1 class="text-2xl font-sans md:text-6xl font-extrabold text-center">
+          <h1 class="text-2xl text-grey-500 font-sans md:text-6xl font-extrabold text-center">
             Building next-gen apps with OpenAI’s powerful models
           </h1>
-          <p class="py-4 text-center text-gray-600 text-lg md:text-xl">
+          <p class="py-4 text-center text-gray-500 text-lg md:text-xl">
             The OpenAI API can be applied to virtually any task that involves
             understanding or generating natural language or code. We offer a
             spectrum of models with different levels of power suitable for
@@ -83,7 +83,7 @@
     </section>
 
     <section>
-      <div class="md:max-w-7xl w-[100%] py-4 px-4 mt-6 mx-auto">
+      <div class="md:max-w-7xl w-[100%] md:py-4 px-4  mx-auto">
         <div class="md:flex md:space-x-6 justify-between">
           <div
             v-for="(item, i) in serviceList"

@@ -4,7 +4,7 @@
       class="mx-auto md:max-w-7xl h-full w-[100%] px-2 py-10 sm:px-6 lg:px-8"
     >
       <div class="md:flex h-full">
-        <section class="w-full md:w-1/2 md:p-10">
+        <section class="hidden md:block w-full md:w-1/2 md:p-10">
           <h1 class="text-xl md:text-4xl font-bold py-2">Bio</h1>
           <p class="text-gray-500">
             Professional Software Engineer with 5 years of commercial experience
@@ -45,7 +45,7 @@
             </div>
           </div>
         </section>
-        <section class="w-full h-full border-l p-2 md:px-10">
+        <section class="w-full h-full md:border-l p-2 md:px-10">
           <h1 class="text-xl md:text-4xl font-bold py-2">Experience</h1>
           <div v-for="(item, i) in experiences" :key="i">
             <div

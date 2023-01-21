@@ -2,6 +2,7 @@
   <div>
     <PublicToolbar />
     <slot />
+
     <Footer />
   </div>
 </template>

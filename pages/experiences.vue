@@ -1,9 +1,9 @@
 <template>
   <div class="pt-20 md:pt-32 h-full">
     <div
-      class="mx-auto md:max-w-7xl h-full justify-center w-[100%] px-2 py-10 sm:px-6 lg:px-8"
+      class="mx-auto md:max-w-7xl h-full w-[100%] px-2 py-10 sm:px-6 lg:px-8"
     >
-      <div class="md:flex">
+      <div class="md:flex h-full">
         <section class="w-full md:w-1/2 md:p-10">
           <h1 class="text-xl md:text-4xl font-bold py-2">Bio</h1>
           <p class="text-gray-500">
@@ -24,28 +24,28 @@
                 target="_blank"
                 class="text-gray-600 flex items-center"
               >
-               <span class="pr-5"> {{ i + 1 }}. {{ item.company }}</span>
+                <span class="pr-5"> {{ i + 1 }}. {{ item.company }}</span>
                 <div class="text-blue-600">
                   <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-4 h-4"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                  />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
                 </div>
               </nuxt-link>
             </div>
           </div>
         </section>
-        <section class="w-full border-l p-2 md:px-10">
+        <section class="w-full h-full border-l p-2 md:px-10">
           <h1 class="text-xl md:text-4xl font-bold py-2">Experience</h1>
           <div v-for="(item, i) in experiences" :key="i">
             <div
@@ -193,7 +193,7 @@ const experiences = [
 
   {
     href: "https://bankpaytechnologies.com",
-    location: "London, United Kingdom (Remote)" ,
+    location: "London, United Kingdom (Remote)",
     title: "Software Engineer",
     company: "BankPay Technologies LTD",
     startDate: "April, 2019",

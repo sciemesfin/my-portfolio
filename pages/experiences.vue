@@ -178,7 +178,7 @@ const experiences = [
   },
 
   {
-    href: "https://poshakconsultancy.com/",
+    href: "https://poshakconsultancy.com",
     location: "Bahir Dar, Ethiopia (Onsite)",
     title: "Software Engineer",
     company: "Poshak Consultancy PLC",

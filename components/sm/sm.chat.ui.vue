@@ -30,15 +30,83 @@
           <div
             class="flex-auto flex flex-col justify-between overflow-y-auto p-10"
           >
+            <div>
+              <input
+                v-model="inputValue"
+                @input="getData"
+                placeholder="Enter your prompt here"
+              />
+              <div v-if="response">
+                <section>
+                  Chats:  {{ chats }}
+                </section>
+              </div>
+              <div v-if="loading">Loading...</div>
+              <div v-if="error">An error occured: {{ error }}</div>
+            </div>
             <div class="flex flex-col">
-              <div v-for="i in 20" :key="i">
-                <div class="flex flex-row p-2 w-11/12">
-                  <div class="w-1/12 py-2 flex self-end">
-                    <!-- <img
-                      src="~/assets/chatgpt.png"
-                      class="h-12 w-12 rounded-full self-end"
-                      alt=""
-                    /> -->
+              <div v-for="i in 1" :key="i">
+                <div class="flex flex-row justify-end">
+                  <div class="flex items-end">
+                    <div
+                      class="p-2 text-white bg-blue-600 rounded-full hover:text-gray-200 hover:bg-blue-400 focus:outline-none focus:ring"
+                      aria-label="Upload a files"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-6 w-6"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                        ></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <div
+                      class="px-4 py-3 rounded-tl-xl rounded-tr-xl rounded-br-xl rounded-none ml-3 my-2 bg-blue-500 text-white"
+                    >
+                      <p class="text-sm flex">
+                        There are many variations of passages of Lorem Ipsum
+                      </p>
+                      <div class="ml-2 text-xs text-gray-300">
+                        <span class="mr-1"> 10:46 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-row p-2">
+                  <div class="w-full p-2">
+                    <div
+                      class="bg-gray-100 p-3 rounded-tl-xl rounded-tr-xl rounded-bl-xl mb-2 relative"
+                    >
+                      <h2 class="text-sm font-semibold mb-2">Yaeko Lindblom</h2>
+                      <p class="text-sm">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                      <span class="text-xs text-gray-500 bottom-2">09:24</span>
+                    </div>
+                  </div>
+
+                  <div class="py-2 flex self-end">
                     <div class="text-white bg-green-600 p-1 rounded-full">
                       <svg
                         width="41"
@@ -54,48 +122,6 @@
                           fill="currentColor"
                         ></path>
                       </svg>
-                    </div>
-                  </div>
-                  <div class="w-11/12 p-2">
-                    <div class="bg-gray-50 p-3 rounded-xl mb-2 relative">
-                      <h2 class="text-sm font-semibold mb-2">Yaeko Lindblom</h2>
-                      <p class="text-sm">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of
-                        Letraset sheets containing Lorem Ipsum passages, and
-                        more recently with desktop publishing software like
-                        Aldus PageMaker including versions of Lorem Ipsum.
-                      </p>
-                      <span
-                        class="text-xs text-gray-500 absolute right-2 bottom-2"
-                        >09:24</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-row justify-end">
-                  <div class="p-1">
-                    <div
-                      class="px-4 py-3 rounded-full my-2 bg-blue-500 text-white flex flex-row items-center"
-                    >
-                      <p class="text-sm flex">
-                        There are many variations of passages of Lorem Ipsum
-                      </p>
-                      <div class="ml-2 flex flex-row text-xs text-gray-300">
-                        <span class="mr-1"> 10:46 </span>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 19 14">
-                          <path
-                            fill-rule="nonzero"
-                            d="M4.96833846,10.0490996 L11.5108251,2.571972 C11.7472185,2.30180819 12.1578642,2.27443181 12.428028,2.51082515 C12.6711754,2.72357915 12.717665,3.07747757 12.5522007,3.34307913 L12.4891749,3.428028 L5.48917485,11.428028 C5.2663359,11.6827011 4.89144111,11.7199091 4.62486888,11.5309823 L4.54038059,11.4596194 L1.54038059,8.45961941 C1.2865398,8.20577862 1.2865398,7.79422138 1.54038059,7.54038059 C1.7688373,7.31192388 2.12504434,7.28907821 2.37905111,7.47184358 L2.45961941,7.54038059 L4.96833846,10.0490996 L11.5108251,2.571972 L4.96833846,10.0490996 Z M9.96833846,10.0490996 L16.5108251,2.571972 C16.7472185,2.30180819 17.1578642,2.27443181 17.428028,2.51082515 C17.6711754,2.72357915 17.717665,3.07747757 17.5522007,3.34307913 L17.4891749,3.428028 L10.4891749,11.428028 C10.2663359,11.6827011 9.89144111,11.7199091 9.62486888,11.5309823 L9.54038059,11.4596194 L8.54038059,10.4596194 C8.2865398,10.2057786 8.2865398,9.79422138 8.54038059,9.54038059 C8.7688373,9.31192388 9.12504434,9.28907821 9.37905111,9.47184358 L9.45961941,9.54038059 L9.96833846,10.0490996 L16.5108251,2.571972 L9.96833846,10.0490996 Z"
-                          ></path>
-                        </svg>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -129,11 +155,37 @@
               </nuxt-link>
             </div>
             <div class="flex-1 px-3">
-              <input
-                type="text"
-                class="w-full border-2 border-gray-100 rounded-full px-4 py-1 outline-none text-gray-500 focus:outline-none focus:ring"
-                placeholder="Write a message..."
-              />
+              <div class="flex items-between">
+                <div
+                  class="rounded-md p-1 shadow w-full flex justify-between px-4 bg-white"
+                >
+                  <textarea
+                    rows="1"
+                    class="bg-white overflow-hidden resize-none text-gray-900 text-sm w-full py-2 border-none focus:ring-0 focus:outline-none focus:outline-none"
+                    v-model="inputValue"
+                    @keyup.enter="getData"
+                  />
+                  <button
+                    class="relative rounded-md text-gray-500 right-0 hover:bg-gray-100 dark:hover:text-gray-400 dark:hover:bg-gray-900 disabled:hover:bg-transparent dark:disabled:hover:bg-transparent"
+                    @click="getData"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 20 20"
+                      class="h-4 w-4 rotate-90"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="flex flex-row">
               <button
@@ -184,7 +236,63 @@
   </div>
 </template>
 
-<script setup></script>
+<script>
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const inputValue = ref("");
+    const response = ref(null);
+    const error = ref(null);
+    const loading = ref(false);
+    const chats=ref(null)
+
+    const getData = async () => {
+      loading.value = true;
+      error.value = null;
+      try {
+        const apiKey = "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";
+        const res = await fetch(
+          "https://api.openai.com/v1/completions",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${apiKey}`,
+            },
+            body: JSON.stringify({
+              prompt: inputValue.value,
+              model: "text-davinci-003",
+              temperature: 0.9,
+              max_tokens: 2000,
+              top_p: 1,
+              frequency_penalty: 0.0,
+              presence_penalty: 0.6,
+              stop: [" Human:", " AI:"],
+            }),
+          }
+        );
+        const data = await res.json();
+        response.value = data.choices[0].text;
+        chats.value=[...chats.value,...[{q:inputValue.value,a:data.choices[0].text}]]
+      } catch (err) {
+        error.value = err;
+      } finally {
+        loading.value = false;
+      }
+    };
+
+    return {
+      inputValue,
+      response,
+      chats,
+      loading,
+      error,
+      getData,
+    };
+  },
+};
+</script>
 
 <style>
 .body {

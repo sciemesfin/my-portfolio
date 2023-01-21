@@ -6,7 +6,7 @@
       v-slot="{ open }"
     >
       <div
-        class="mx-auto md:max-w-7xl py-4 justify-center w-[100%] px-2 sm:px-6 lg:px-8"
+        class="mx-auto md:max-w-7xl py-2 justify-center w-[100%] px-2 sm:px-6 lg:px-8"
       >
         <div class="flex justify-between items-center">
           <div>
@@ -130,13 +130,10 @@
 
     <section class="h-full">
       <div class="flex-col flex">
-        <section class="h-[100vh] overflow-y-auto ">
-          <div
-            class="flex-auto flex flex-col justify-between  p-2 pb-[300px]"
-          >
+        <section class="h-[100vh] overflow-y-auto">
+          <div class="flex-auto flex flex-col justify-between p-2 pb-[300px]">
             <div class="flex flex-col">
               <div v-for="i in 20" :key="i">
-
                 <div class="flex flex-row justify-end">
                   <div class="flex items-end">
                     <div
@@ -162,7 +159,7 @@
                       </svg>
                     </div>
                     <div
-                      class="px-4 py-3 rounded-tl-xl rounded-tr-xl rounded-br-xl  rounded-none ml-3 my-2 bg-blue-500 text-white"
+                      class="px-4 py-3 rounded-tl-xl rounded-tr-xl rounded-br-xl rounded-none ml-3 my-2 bg-blue-500 text-white"
                     >
                       <p class="text-sm flex">
                         There are many variations of passages of Lorem Ipsum
@@ -171,16 +168,10 @@
                         <span class="mr-1"> 10:46 </span>
                       </div>
                     </div>
-
-                   
                   </div>
                 </div>
 
-                
                 <div class="flex flex-row p-2">
-                 
-                    
-
                   <div class="w-full p-2">
                     <div
                       class="bg-gray-100 p-3 rounded-tl-xl rounded-tr-xl rounded-bl-xl mb-2 relative"
@@ -221,39 +212,36 @@
                       </svg>
                     </div>
                   </div>
-
-                  
                 </div>
-                
               </div>
             </div>
           </div>
         </section>
-        <section class="fixed bottom-0 bg-green-100 w-full h-[135px] p-3">
+        <section class="fixed bottom-0 bg-green-100 w-full h-[100px] p-3">
           <div class="flex items-between">
             <div
               class="rounded-md shadow w-full flex justify-between px-4 bg-white"
             >
-              <input
-                class="bg-white text-gray-900 text-sm w-full py-3 border-none focus:ring-0 focus:outline-none"
+              <textarea
+                rows="1"
+                class="bg-white overflow-hidden resize-none text-gray-900 text-sm w-full py-2 border-none focus:ring-0 focus:outline-none focus:outline-none"
               />
               <button
-                disabled=""
-                className="rotate-90 p-1 rounded-md  text-gray-500 bottom-1.5 right-1 md:bottom-2.5 md:right-2 hover:bg-gray-100 dark:hover:text-gray-400 dark:hover:bg-gray-900 disabled:hover:bg-transparent dark:disabled:hover:bg-transparent"
+                class="relative rounded-md text-gray-500 mx-auto align-center right-0 disabled:hover:bg-transparent dark:disabled:hover:bg-transparent"
               >
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  strokeWidth="{0}"
+                  stroke-width="0"
                   viewBox="0 0 20 20"
-                  className="h-4 w-4"
+                  class="h-4 w-4 rotate-90"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
-                  />
+                  ></path>
                 </svg>
               </button>
             </div>
@@ -281,21 +269,21 @@
             </div>
           </div>
           <div
-            className="pt-2 pb-3 text-center text-xs text-black/50 dark:text-white/50"
+            className="py-3 text-center text-black/50 dark:text-white/50"
           >
             <nuxt
               href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
               target="_blank"
               rel="noreferrer"
-              className="underline"
+              className="text-xs text-blue-600"
             >
-              ChatGPT Dec 15 Version
+              ChatGPT 
             </nuxt>
-            . Free Research Preview. Our goal is to make AI systems more natural
-            and safe to interact with. Your feedback will help for further
-            improvements. API integrated by:
+            <span class="text-xs pl-1">
+             API integrated by:
+            </span>
             <nuxt-link
-              className="text-blue-600"
+              className="text-blue-600 text-xs pl-2"
               href="https://www.linkedin.com/in/mesfin-tsegaye"
             >
               Mesfin Tsegaye

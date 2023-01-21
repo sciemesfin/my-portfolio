@@ -95,16 +95,16 @@
             >
               <nuxt-link :href="item.route" target="_blank">
                 <img
-                class="w-full h-32"
-                :src="item.img"
-                alt="Sunset in the mountains"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">{{ item.title }}</div>
-                <p class="text-gray-700 text-base">
-                  {{ item.desc }}
-                </p>
-              </div>
+                  class="w-full h-32"
+                  :src="item.img"
+                  alt="Sunset in the mountains"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">{{ item.title }}</div>
+                  <p class="text-gray-700 text-base">
+                    {{ item.desc }}
+                  </p>
+                </div>
               </nuxt-link>
             </div>
           </div>

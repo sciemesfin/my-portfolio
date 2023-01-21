@@ -1,8 +1,9 @@
 <template>
   <div>
     <PublicToolbar />
-    <slot />
-
+    <div class="h-full">
+      <slot />
+    </div>
     <Footer />
   </div>
 </template>

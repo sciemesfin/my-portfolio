@@ -82,9 +82,9 @@
       </div>
     </section>
 
-    <section>
-      <div class="md:max-w-7xl w-[100%] md:py-4 px-4  mx-auto">
-        <div class="md:flex md:space-x-6 justify-between">
+    <section class="h-full">
+      <div class="md:max-w-7xl w-[100%] py-1 md:py-4 px-4  mx-auto">
+        <div class="md:flex  md:space-x-6 justify-between">
           <div
             v-for="(item, i) in serviceList"
             :key="i"

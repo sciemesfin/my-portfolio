@@ -14,7 +14,7 @@
             <img
               :src="item.image"
               alt=""
-              class="object-contain h-full shadow border border-grey-800"
+              class="object-contain h-full"
             />
           </div>
         </div>

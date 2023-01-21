@@ -10,11 +10,11 @@
           :key="item.school"
           class="w-full p-2 md:p-10 md:w-1/2"
         >
-          <div  class="h-full max-h-[550px] cursor-pointer bg-white shadow-md border border-gray-200 rounded-lg">
+          <div  class="h-full max-h-[305px] md:max-h-[550px] cursor-pointer bg-white shadow-md border border-gray-200 rounded-lg">
             <img
               :src="item.image"
               alt=""
-              class="object-contain h-full max-h-[548px]"
+              class="object-contain h-full max-h-[300px] md:max-h-[548px]"
             />
           </div>
         </div>

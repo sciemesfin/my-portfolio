@@ -251,7 +251,7 @@ export default {
       loading.value = true;
       error.value = null;
       try {
-        const apiKey = "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";
+        const apiKey = '';
         const res = await fetch(
           "https://api.openai.com/v1/completions",
           {

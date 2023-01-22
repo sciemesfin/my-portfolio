@@ -3,7 +3,7 @@
     <div
       class="mx-auto md:max-w-7xl py-10 justify-center w-[100%] px-5 sm:px-6 lg:px-8"
     >
-    <h1 class="text-xl my-8 text-center md:text-7xl font-extrabold py-2">Skills</h1>
+    <h1 class="text-4xl my-8 text-center md:text-7xl font-extrabold py-2">Skills</h1>
       <div class="md:flex md:space-x-3 md:py-10 md:space-x-20">
         <section class="w-full md:w-1/2 md:px-10">
           <div>

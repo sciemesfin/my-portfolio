@@ -3,7 +3,7 @@
     <div
       class="mx-auto md:max-w-7xl py-4 justify-center w-[100%] px-5 sm:px-6 lg:px-8 pb-64"
     >
-      <h1 class="text-xl my-8 text-center md:text-7xl font-extrabold py-2">
+      <h1 class="text-4xl my-8 text-center md:text-7xl font-extrabold py-2">
         Education
       </h1>
       <div class="md:flex md:space-x-10 h-[100vh]">

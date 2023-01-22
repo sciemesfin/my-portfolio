@@ -6,7 +6,7 @@
       <div class="md:flex justify-between">
         <section class="w-full md:w-1/2">
           <h1 class="text-4xl my-8 md:mb-10 md:text-7xl font-extrabold py-2">
-            Learn about me
+            Mesfin Tsegaye
           </h1>
           <p class="text-gray-500">
             Professional Software Engineer with 5 years of commercial experience

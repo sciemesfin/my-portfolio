@@ -3,7 +3,7 @@
     <div
       class="mx-auto md:max-w-7xl h-full w-[100%] px-2 py-10 sm:px-6 lg:px-8"
     >
-    <h1 class="text-xl my-8 mb-10 text-center md:text-7xl font-extrabold py-2">Projects Delivered</h1>
+    <h1 class="text-4xl my-8 mb-10 text-center md:text-7xl font-extrabold py-2">Projects Delivered</h1>
       <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="max-w-lg mx-auto" v-for="(item, i) in items" :key="i">
           <div

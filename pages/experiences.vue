@@ -46,7 +46,7 @@
           </div>
         </section>
         <section class="w-full h-full md:border-l p-2 md:px-10">
-          <h1 class="text-xl md:text-4xl font-bold py-2">Experience</h1>
+          <h1 class="text-4xl md:text-4xl font-bold py-2">Experience</h1>
           <div v-for="(item, i) in experiences" :key="i">
             <div
               class="p-5 my-5 shadow-md border border-gray-300 rounded h-full"

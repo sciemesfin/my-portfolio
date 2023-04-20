@@ -23,7 +23,8 @@
           </p>
           <div class="py-5">
             <nuxt-link
-              href="/chat"
+              href="https://etyopai.com"
+              target="_blank"
               class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Get started
@@ -111,7 +112,7 @@
         </div>
         <div class="flex justify-center mt-6">
           <nuxt-link
-            href="https://beta.openai.com/examples"
+            href="https://etyopai.com/home"
             target="_blank"
             class="inline-block shadow-xl rounded-lg bg-blue-600 px-4 py-2.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
           >
@@ -133,12 +134,13 @@
           </h1>
         </div>
         <div class="py-10 flex justify-center">
-          <RouterLink
-            to="/chat"
+          <nuxt-link
+            to="https://etyopai.com/chat"
+            target="_blank"
             class="inline-block shadow-xl my-3 rounded-lg bg-blue-600 px-6 py-2.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
           >
             Try ChatGPT
-          </RouterLink>
+          </nuxt-link>
         </div>
       </div>
     </section>
@@ -151,25 +153,25 @@ const serviceList = [
     img: "https://img.freepik.com/free-vector/data-centers-are-data-centers-serve-applications-supporting-business-information-cloud-computing-technology-business-analysis-analytics-research-strategy-statistic-planning-marketing_1150-55220.jpg?w=1800&t=st=1668960417~exp=1668961017~hmac=6478baa595c5d0f38e90fcbb7c02296afa0eeaf9626cfe98e2f133373988b45b",
     title: "Text completion",
     desc: "It provides a simple but powerful interface to any of our models",
-    route: "https://beta.openai.com/docs/guides/completion",
+    route: "https://etyopai.com/home",
   },
   {
     img: "https://kinsta.com/de/wp-content/uploads/sites/5/2019/11/woocommerce-crm-1024x512.png",
     title: "Image generation",
     desc: "The image generations endpoint allows you to create an original image given a text prompt",
-    route: "https://beta.openai.com/docs/guides/images",
+    route: "https://etyopai.com/image",
   },
   {
     img: "https://img.freepik.com/free-vector/female-student-listening-webinar-online_74855-6461.jpg?w=2000&t=st=1668960950~exp=1668961550~hmac=6747921465eda3ea30df84ea43e07264e44786a77d0d3c07bb70b5e691d59d0d",
     title: "Code Compilation",
     desc: "Use the GPT-3 series Codex model series for your coding projects.",
-    route: "https://beta.openai.com/docs/guides/code",
+    route: "https://etyopai.com/code",
   },
   {
     img: "https://img.freepik.com/free-vector/gradient-api-illustration_23-2149373204.jpg?w=2000&t=st=1668961150~exp=1668961750~hmac=0a7ec352a5c8ec3e13ce1335f88220276537fd16b0ef172d7cf3d9ec8f2198cb",
-    title: "Embedding",
-    desc: "OpenAI’s text embeddings measure the relatedness of text strings. ",
-    route: "https://beta.openai.com/docs/guides/embeddings",
+    title: "Study Note",
+    desc: "Use etyopai to provide a topic and get a study note.",
+    route: "https://etyopai.com/study-note",
   },
 ];
 </script>

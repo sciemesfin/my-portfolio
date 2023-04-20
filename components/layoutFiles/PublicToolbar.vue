@@ -43,7 +43,7 @@
         </div>
         <div class="flex items-center space-x-5 hidden md:flex">
           <nuxt-link
-            href="https://etyopmedia.com/chat"
+            href="https://etyopai.com"
             target="_blank"
             class="inline-block shadow-xl rounded-lg bg-blue-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
           >
@@ -115,7 +115,7 @@
           >Resume</nuxt-link
         >
         <nuxt-link
-          href="https://etyopmedia.com/chat"
+          href="https://etyopai.com"
           target="_blank"
           className="block w-full font-bold bg-gray-50 px-5 py-3 text-center  text-blue-600 hover:bg-gray-100"
         >

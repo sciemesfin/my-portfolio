@@ -25,7 +25,9 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxt/typescript-runtime": "^2.1.0",
     "axios": "^1.2.2",
+    "typewriter-vue": "0.5.10",
     "vee-validate": "^4.7.3",
+    "vue-typer": "^1.2.0",
     "yup": "^0.32.11"
   }
 }

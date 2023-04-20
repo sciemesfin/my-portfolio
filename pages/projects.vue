@@ -3,7 +3,11 @@
     <div
       class="mx-auto md:max-w-7xl h-full w-[100%] px-2 py-10 sm:px-6 lg:px-8"
     >
-    <h1 class="text-4xl my-8 mb-10 text-center md:text-7xl font-extrabold py-2">Projects Delivered</h1>
+      <h1
+        class="text-4xl my-8 mb-10 text-center md:text-7xl font-extrabold py-2"
+      >
+        Projects Delivered
+      </h1>
       <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="max-w-lg mx-auto" v-for="(item, i) in items" :key="i">
           <div
@@ -47,19 +51,11 @@ import astra from "../assets/projects/astra.png";
 import tesfacoffee from "../assets/projects/tesfacoffe.png";
 import sharegebeya from "../assets/projects/sharegebeya.png";
 import kpe from "../assets/projects/kpe.png";
-import moneyave from  "../assets/projects/moneyave.png";
-import lms  from  "../assets/projects/lms.jpeg";
+import moneyave from "../assets/projects/moneyave.png";
+import lms from "../assets/projects/lms.jpeg";
+import techethio from '../assets/projects/techethio.webp'
 
 const items = [
-  {
-    title: "Astra ERP Systems",
-    companyWebsite: "https://poshakconsultancy.com",
-    companyName: "Poshak Consultancy Plc",
-    description: `Enterprise Resource Planning Software developed for Garment and Fashion industries. In this project we developed a system that will optimize cut order planing,
-       operators' performance and machine efficiency monitoring, and quality assurance. The system also handles other
-       servcies like Human resorces, accounting and finance, reports, and etc. `,
-    image: astra,
-  },
   {
     title: "Tesfa Coffee Website",
     companyWebsite: "https://www.tesfacoffee.com",
@@ -73,11 +69,41 @@ const items = [
   },
   {
     title: "Learning Management System",
-    companyWebsite: "https://www.tesfacoffee.com",
-    companyName: "Tesfa Coffee Trade",
+    companyWebsite: "https://yic.edu.et",
+    companyName: "Yesu IT Solution plc",
     description: `A learning management and school portal system that allow universities in Ethiopia to handle their teaching
     and learning process easier. This system is being used by 11 local universities.`,
-    image: lms
+    image: lms,
+  },
+  {
+    title: "TechEthio Website",
+    companyWebsite: "https://techethio.com",
+    companyName: "TechEthio IT Solution Plc",
+    description: `TechEthio is working hard to make your life easier! The following are a few key areas among what we are focusing to innovate the best possible solution!`,
+    image: techethio,
+  },
+  {
+    title: "Share Gebeya Marketplace",
+    companyWebsite: "https://sharegebeya.com",
+    companyName: "TechEthio IT Solution Plc",
+    description: `Android app, and web app that allow people to sell and buy shares online in Ethiopia.`,
+    image: sharegebeya,
+  },
+  {
+    title: "ERP for Kenema Pharmacies",
+    companyWebsite: "https://kenemape.com",
+    companyName: "Kenema Pharmacies Enterprise",
+    description: `Web based ERP system that helps Kenema Pharmacies Enterprise to automate and digital whole activities of the company. `,
+    image: kpe,
+  },
+  {
+    title: "Astra ERP Systems",
+    companyWebsite: "https://poshakconsultancy.com",
+    companyName: "Poshak Consultancy Plc",
+    description: `Enterprise Resource Planning Software developed for Garment and Fashion industries. In this project we developed a system that will optimize cut order planing,
+       operators' performance and machine efficiency monitoring, and quality assurance. The system also handles other
+       servcies like Human resorces, accounting and finance, reports, and etc. `,
+    image: astra,
   },
   {
     title: "Customer Onboarding App",
@@ -102,7 +128,7 @@ const items = [
     companyName: "Money Avenue LLC",
     description: `Android and IOS app helps customers of Money Avenue LLC to transfer money money easily. Custoemrs can link their 
     Bank accounts to this system and manage their transactions amazingly.`,
-    image:moneyave
+    image: moneyave,
   },
   {
     title: "Car Tracking System",
@@ -112,20 +138,6 @@ const items = [
     The tracking company uses the dispatching web based software to monitor the tracking process.`,
     image:
       "https://www.touchworldtech.com/images/gps-vehicle-tracking-dubai-uae-1.png",
-  },
-  {
-    title: "Share Gebeya Marketplace",
-    companyWebsite: "https://sharegebeya.com",
-    companyName: "TechEthio IT Solution Plc",
-    description: `Android app, and web app that allow people to sell and buy shares online in Ethiopia.`,
-    image: sharegebeya,
-  },
-  {
-    title: "ERP for Kenema Pharmacies",
-    companyWebsite: "https://kenemape.com",
-    companyName: "Kenema Pharmacies Enterprise",
-    description: `Web based ERP system that helps Kenema Pharmacies Enterprise to automate and digital whole activities of the company. `,
-    image:kpe
   },
 ];
 </script>

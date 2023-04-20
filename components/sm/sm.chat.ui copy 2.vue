@@ -5,7 +5,7 @@
     <div class="flex-1 flex flex-col">
       <main class="flex-grow flex flex-row min-h-0">
         <section
-          class="hidden md:flex flex-col flex-none overflow-auto w-24 hover:w-64 group lg:max-w-sm md:w-2/5 transition-all duration-300 ease-in-out"
+          class="flex flex-col flex-none overflow-auto w-24 hover:w-64 group lg:max-w-sm md:w-2/5 transition-all duration-300 ease-in-out"
         >
           <div
             class="header p-4 flex flex-row justify-between items-center flex-none"
@@ -34,174 +34,29 @@
               </svg>
             </a>
           </div>
-          <div class="search-box p-4 flex-none">
-            <form onsubmit="">
-              <div class="relative">
-                <label>
-                  <input
-                    class="rounded-full py-2 pr-6 pl-10 w-full border border-gray-800 focus:border-gray-700 bg-gray-800 focus:bg-gray-900 focus:outline-none text-gray-200 focus:shadow-md transition duration-300 ease-in"
-                    type="text"
-                    value=""
-                    placeholder="Search Messenger"
-                  />
-                  <span class="absolute top-0 left-0 mt-2 ml-3 inline-block">
-                    <svg viewBox="0 0 24 24" class="w-6 h-6">
-                      <path
-                        fill="#bbb"
-                        d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
-                      />
-                    </svg>
-                  </span>
-                </label>
-              </div>
-            </form>
-          </div>
-          <div
-            class="active-users flex flex-row p-2 overflow-auto w-0 min-w-full"
-          >
-            <div class="text-sm text-center mr-4">
-              <button
-                class="flex flex-shrink-0 focus:outline-none block bg-gray-800 text-gray-600 rounded-full w-20 h-20"
-                type="button"
+          <div class="search-box p-4 flex-none flex justify-between items-center">
+            <p class="text-md font-bold hidden md:block group-hover:block">
+              Saved Conversations
+            </p>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
               >
-                <svg class="w-full h-full fill-current" viewBox="0 0 24 24">
-                  <path
-                    d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"
-                  />
-                </svg>
-              </button>
-              <p>Your Story</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-blue-600 rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/12.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>Anna</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-transparent rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/75.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-              </div>
-              <p>Jeff</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-blue-600 rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/42.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>Cathy</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-transparent rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/87.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-              </div>
-              <p>Madona</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-transparent rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/23.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-              </div>
-              <p>Emma</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-blue-600 rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/65.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>Mark</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-blue-600 rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/65.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>Eva</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-transparent rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/31.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-              </div>
-              <p>Max</p>
-            </div>
-            <div class="text-sm text-center mr-4">
-              <div class="p-1 border-4 border-blue-600 rounded-full">
-                <div class="w-16 h-16 relative flex flex-shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/81.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>Adam</p>
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                />
+              </svg>
+            </button>
           </div>
-          <div class="contacts p-2 flex-1 overflow-y-scroll">
+        
+          <div class="contacts max-h-[400px] p-2 flex-1 overflow-y-scroll">
             <div
               class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
             >
@@ -611,7 +466,7 @@
         </section>
         <section class="flex flex-col flex-auto border-l border-gray-800">
           <div
-            class="hidden chat-header px-6 py-4 md:lex flex-row flex-none justify-between items-center shadow"
+            class="chat-header px-6 py-4 flex flex-row flex-none justify-between items-center shadow"
           >
             <div class="flex">
               <div class="w-12 h-12 mr-4 relative flex flex-shrink-0">
@@ -1228,7 +1083,7 @@ C15.786,7.8,14.8,8.785,14.8,10s0.986,2.2,2.201,2.2S19.2,11.215,19.2,10S18.216,7.
               </div>
             </div>
           </div>
-          <div class="chat-footer fixed bottom-0 bg-gray-900 flex-none">
+          <div class="chat-footer flex-none">
             <div class="flex flex-row items-center p-4">
               <button
                 type="button"
